@@ -5,6 +5,8 @@ import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 function App() {
   return (
@@ -12,17 +14,20 @@ function App() {
       {/* <NameList /> */}
       {/* <Form /> */}
       {/* <LifecycleA /> */}
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
       <Hero heroname='superman' />
       </ErrorBoundary>
 
       <ErrorBoundary>
       <Hero heroname='batman' />
       </ErrorBoundary>
-      
+
       <ErrorBoundary>
       <Hero heroname='joker' />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
+
+      <ClickCounter name='Abhishek' />
+      <HoverCounter name='Abhishek' />
     </div>
   );
 }
