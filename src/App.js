@@ -7,6 +7,9 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import Counter from './components/Counter';
 
 function App() {
   return (
@@ -26,8 +29,26 @@ function App() {
       <Hero heroname='joker' />
       </ErrorBoundary> */}
 
-      <ClickCounter name='Abhishek' />
-      <HoverCounter name='Abhishek' />
+      {/* <ClickCounter name='Abhishek' />
+      <HoverCounter name='Abhishek' /> */}
+
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo /> */}
+
+      {/* <Counter render={(count,increamentCount)=>(
+        <ClickCounterTwo count={count} increamentCount={increamentCount} />
+      )} /> */}
+
+      <Counter>
+        {(count,increamentCount)=>(
+        <ClickCounterTwo count={count} increamentCount={increamentCount} />)}
+      </Counter>
+
+      <Counter>
+        {(count,increamentCount)=>(
+        <HoverCounterTwo count={count} increamentCount={increamentCount} />)}
+      </Counter> 
+
     </div>
   );
 }
