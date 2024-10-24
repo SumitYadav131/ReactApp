@@ -10,6 +10,10 @@ import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import Counter from './components/Counter';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 function App() {
   return (
@@ -17,14 +21,13 @@ function App() {
       {/* <NameList /> */}
       {/* <Form /> */}
       {/* <LifecycleA /> */}
+
       {/* <ErrorBoundary>
       <Hero heroname='superman' />
       </ErrorBoundary>
-
       <ErrorBoundary>
       <Hero heroname='batman' />
       </ErrorBoundary>
-
       <ErrorBoundary>
       <Hero heroname='joker' />
       </ErrorBoundary> */}
@@ -39,16 +42,23 @@ function App() {
         <ClickCounterTwo count={count} increamentCount={increamentCount} />
       )} /> */}
 
-      <Counter>
+      {/* <Counter>
         {(count,increamentCount)=>(
         <ClickCounterTwo count={count} increamentCount={increamentCount} />)}
       </Counter>
-
       <Counter>
         {(count,increamentCount)=>(
         <HoverCounterTwo count={count} increamentCount={increamentCount} />)}
-      </Counter> 
+      </Counter>  */}
 
+
+      {/* <UserProvider value='Abhishek' >
+        <ComponentC />
+      </UserProvider> */}
+
+      {/* <PostList /> */}
+
+      <PostForm />
     </div>
   );
 }
