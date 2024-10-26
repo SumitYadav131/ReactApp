@@ -14,6 +14,10 @@ import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
+import HookCounter from './hookcomponents/HookCounter';
+import HookCounterTwo from './hookcomponents/HookCounterTwo';
+import HookCounterThree from './hookcomponents/HookCounterThree';
+import HookCounterFour from './hookcomponents/HookCounterFour';
 
 function App() {
   return (
@@ -58,7 +62,13 @@ function App() {
 
       {/* <PostList /> */}
 
-      <PostForm />
+      {/* <PostForm /> */}
+
+      {/* React Hooks */}
+      {/* <HookCounter /> */}
+      {/* <HookCounterTwo /> */}
+      {/* <HookCounterThree /> */}
+      <HookCounterFour />
     </div>
   );
 }
