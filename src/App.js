@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import NameList from './components/NameList';
 import Form from './components/Form';
@@ -10,7 +11,7 @@ import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import Counter from './components/Counter';
-import ComponentC from './components/ComponentC';
+// import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
@@ -23,6 +24,11 @@ import HookMouse from './hookcomponents/HookMouse';
 import MouseContainer from './hookcomponents/MouseContainer';
 import IntervalHookCounter from './hookcomponents/IntervalHookCounter';
 import DataFetching from './hookcomponents/DataFetching';
+import ComponentC from './hookcomponents/ComponentE';
+
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
+
 
 function App() {
   return (
@@ -78,7 +84,13 @@ function App() {
       {/* <HookMouse /> */}
       {/* <MouseContainer /> */}
       {/* <IntervalHookCounter /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <UserContext.Provider value={'Abhishek'} >
+        <ChannelContext.Provider value={'MyDevIt'}>
+        <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+      
     </div>
   );
 }
