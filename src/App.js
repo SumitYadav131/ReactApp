@@ -28,6 +28,7 @@ import ComponentC from './hookcomponents/ComponentE';
 import CounterOne from './hookcomponents/CounterOne';
 import CounterTwo from './hookcomponents/CounterTwo';
 import CounterThree from './hookcomponents/CounterThree';
+import ParentComponent from './hookcomponents/ParentComponent';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -97,7 +98,9 @@ function App() {
 
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
-      <CounterThree />
+      {/* <CounterThree /> */}
+
+      <ParentComponent />
       
     </div>
   );
