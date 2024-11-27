@@ -10,7 +10,7 @@ import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
 // import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
@@ -29,6 +29,7 @@ import CounterOne from './hookcomponents/CounterOne';
 import CounterTwo from './hookcomponents/CounterTwo';
 import CounterThree from './hookcomponents/CounterThree';
 import ParentComponent from './hookcomponents/ParentComponent';
+import Counter from './hookcomponents/Counter';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -100,7 +101,8 @@ function App() {
       {/* <CounterTwo /> */}
       {/* <CounterThree /> */}
 
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      <Counter />
       
     </div>
   );
